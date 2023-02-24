@@ -1,0 +1,3 @@
+[submodule "projects/jornada-devops-elite"]
+	path = projects/jornada-devops-elite
+	url = git@github.com:taffarel55/jornada-devops-elite.git
