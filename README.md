@@ -32,7 +32,7 @@ Este foi o meu primeiro contato de verdade com o DevOps, foi um evento que possi
 - 📈 **Grafana**: Monitoramento
 - 🔥 **Prometheus**: Métricas
 
-Para ver o projeto [clique aqui](projects/jornada-devops-elite/)
+Para ver o projeto [clique aqui](https://github.com/taffarel55/jornada-devops-elite/tree/d1b5e8e7f1b7a85651e4a2475fccf2530a8eb09c)
 
 
 <h2 id="contribuir">📫 Contribuindo para este repositório</h2>
