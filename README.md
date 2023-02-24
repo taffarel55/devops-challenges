@@ -1,72 +1,39 @@
 <h1 id="inicio" align="center">
   <br>
-  <img src="assets/logo.svg" alt="Just a simple icon" height="100">
+  <img src="assets/devops.png" alt="DevOps Logo" height="100">
   <br>
 
-Título do Projeto
+Learning Devops
 
 </h1>
 
-Esta é uma descrição do que estou aprendendo, um resumo de geral de como será e está sendo feito e qual material estou seguindo.
+Este projeto serve para reunir os estudos acerca dos fundamentos e tecnologias DevOps. Para centralizar todos os meus projetos, criei este repositório, que funciona como um hub para encontrar todos eles. Cada projeto está importado como um submódulo git.
 
-## 💻 Tecnologias abordadas
+Se você precisar clonar todos os submódulos referente aos projetos, você pode usar o comando git:
 
-<table>
-  <tbody>
-    <tr>
-      <td align="center">Tecnologia 1<br>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </td>
-      <td align="center">Tecnologia 2<br>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </td>
-      <td align="center">Tecnologia 3<br>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </td>
-      <td align="center">Tecnologia 4<br>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </td>
-      <td align="center">Tecnologia 5<br>
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-      </td>
-    </tr>
-    <tr>
-        <td><a href="#"><img src="assets/logo.svg" width="2560px"></a></td>
-        <td><a href="#"><img src="assets/logo.svg" width="2560px"></a></td>
-        <td><a href="#"><img src="assets/logo.svg" width="2560px"></a></td>
-        <td><a href="#"><img src="assets/logo.svg" width="2560px"></a></td>
-        <td><a href="#"><img src="assets/logo.svg" width="2560px"></a></td>
-    </tr>
-  </tbody>
-</table>
+```bash
+git submodule update --init --recursive
+```
 
-## 🚀 Lista de itens
+Ou se estiver somente olhando pelo GitHub web e quiser dar uma olhadinha nos projetos [clique aqui](projects)
 
-- [Subtópico 1](#link-para-subtopico-1)
-- [Subtópico 2](#link-para-subtopico-2)
-- [Subtópico 3](#link-para-subtopico-3)
+## 🚀 Lista de projetos
 
-### 2. [Tecnologia 2](#)
+### 1. Jornada DevOps de Elite
 
-- [Subtópico 1](#link-para-subtopico-1)
-- [Subtópico 2](#link-para-subtopico-2)
-- [Subtópico 3](#link-para-subtopico-3)
+![](assets/jornadaDevopsElite.png)
 
-...
+Este foi o meu primeiro contato de verdade com o DevOps, foi um evento que possibilitou o aprendizado da cultura DevOps, além da intrução diversas tecnologias fazendo um projeto do inicio ao fim. Tecnologias abordadas:
 
-### n. [Tecnologia n](#)
+- 🐋 **Docker**: Containerização
+- ☸️ **Kubernetes**: Orquestração
+- 🇹 **Terraform**: Provisionamento
+- 🕴️ **Jenkins**: Automação
+- 📈 **Grafana**: Monitoramento
+- 🔥 **Prometheus**: Métricas
 
-- [Subtópico 1](#link-para-subtopico-1)
-- [Subtópico 2](#link-para-subtopico-2)
-- [Subtópico 3](#link-para-subtopico-3)
+Para ver o projeto [clique aqui](projects/jornada-devops-elite/)
 
-> Comentários são sempre bem-vindos entre um item e outro afim de mencionar alguma coisa importante
-
-<h2 id="algo-para-chamar-atenção">🤯 Imagem/gif bacana de algo do projeto para chamar atenção</h2>
-
-![Uma imagem grande aqui para ela ficar centralizada](https://via.placeholder.com/2200x1200.png)
-
----
 
 <h2 id="contribuir">📫 Contribuindo para este repositório</h2>
 
@@ -74,7 +41,7 @@ Contribuições são o que tornam a comunidade de código aberto um lugar incrí
 
 Se quiser "fortalecer" aí sugerindo correções de texto e ortografia ou algum ajuste de código, pode abrir o pull request que vou amar!! :heart_eyes:
 
-> Se tiver uma contribuição rápida que não envolve código, conteúdo ou quiser reportar algum problema sem ter que propor mudanças [clique aqui](https://github.com/<NOME_USUARIO>/<NOME_PROJETO>/issues/new) para criar uma issue.
+> Se tiver uma contribuição rápida que não envolve código, conteúdo ou quiser reportar algum problema sem ter que propor mudanças [clique aqui](https://github.com/taffarel55/devops-challenges/issues/new) para criar uma issue.
 
 ### Caso contrário, siga estes passos
 
@@ -82,7 +49,7 @@ Se quiser "fortalecer" aí sugerindo correções de texto e ortografia ou algum 
 2. Crie um branch: `git checkout -b novoRecurso`.
 3. Adicione suas edições para próximo commit: `git add .`
 4. Faça suas alterações e confirme-as: `git commit -m 'Mensagem da sua contribuição'`
-5. Especifique um novo repositório upstream remote que será sincronizado com a bifurcação: `git remote add upstream git@github.com:<NOME_USUARIO>/<NOME-REPOSITORIO>.git`
+5. Especifique um novo repositório upstream remote que será sincronizado com a bifurcação: `git remote add upstream git@github.com:taffarel55/devops-challenges.git`
 6. Envie para o branch original: `git push --set-upstream origin novoRecurso`
 7. Crie a solicitação de pull através do link que aparecer no terminal.
 
