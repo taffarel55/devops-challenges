@@ -23,6 +23,7 @@ Ou se estiver somente olhando pelo GitHub web e quiser dar uma olhadinha nos pro
 
 ![](assets/jornadaDevopsElite.png)
 
+<details>
 Este foi o meu primeiro contato de verdade com o DevOps, foi um evento que possibilitou o aprendizado da cultura DevOps, além da intrução diversas tecnologias fazendo um projeto do inicio ao fim. Tecnologias abordadas:
 
 - 🐋 **Docker**: Containerização
@@ -31,9 +32,106 @@ Este foi o meu primeiro contato de verdade com o DevOps, foi um evento que possi
 - 🕴️ **Jenkins**: Automação
 - 📈 **Grafana**: Monitoramento
 - 🔥 **Prometheus**: Métricas
+</details>
 
-Para ver o projeto [clique aqui](https://github.com/taffarel55/jornada-devops-elite)
+Para ver o que foi abordado em cada aula, os arquivos e as docuentações do projeto [clique aqui](https://github.com/taffarel55/jornada-devops-elite)
 
+### 2. Dindin 🚧 Em andamento 🚧
+
+![](assets/dindin.png)
+
+<details>
+
+Utilizando os conhecimentos adquiridos na [Jornada DevOps de Elite](#1-jornada-devops-de-elite), decidi implantar um projeto simples que já havia desenvolvido anteriormente, composto por um frontend e um backend seguindo a topologia abaixo:
+
+<h1 align="center">
+  <br>
+  <img src="https://gitlab.com/it-study-group-br/finances/-/raw/master/assets/topology.png" alt="Topologia do projeto">
+  <br>
+</h1>
+
+A ideia foi subir este projeto em um ambiente de produção. A seguir está a lista de coisas que fiz, aprendi e ainda pretendo fazer:
+
+- 📃 **Código**:
+  - Ajustes gerais código fonte
+  - Mudança de endpoints caso esteja em _prod_
+  - 🔜 Criação de testes unitários frontend
+  - 🔜 Criação de testes unitários backend
+- <img src="assets/gitlab.svg" width=16/> **GitLab**:
+  - Criação do projeto em outra plataforma
+  - Utilização do registry
+  - 🔜 Implementar pipeline de CI/CD
+  - 🔜 Armazenar state do Terraform
+- <img src="assets/docker.svg" width=16/> **Docker**:
+  - Dockerfile do backend
+  - Dockerfile do frontend
+  - Usei multi-stage build
+  - Aprendizado de técnicas e boas práticas
+  - Utilização do registry do gitlab
+- <img src="assets/kubernetes.svg" width=16/> **Kubernetes**:
+  - Gerenciamento de um cluster local
+  - Gerenciamento de um cluster remoto
+  - Práticas com os comandos `kubectl`
+  - Utilização do `Deployment`
+  - Utilização do `ReplicaSet`
+  - Utilização do `Pod`
+  - 🔜 Utilização do `Ingress`
+  - 🔜 Utilização do `PersistentVolume`
+  - 🔜 Utilização do `cert-manager`
+  - 🔜 Utilização do `external-dns`
+- <img src="assets/nginx.svg" width=16/> **Nginx**:
+  - Configuração básica `nginx.conf`
+  - Passar solicitação para proxy server
+- 🌐 **Configuração de DNS**:
+  - Apontar para nameservers
+  - Adicionar registro A para criar um subdomínio
+- <img src="assets/terraform.svg" width=16/> **Terraform**:
+  - Utilização do Terraform para provisionar a infraestrutura
+  - Leitura de documentação do Terraform
+  - Terraform para a Digital Ocean
+- <img src="assets/digitalOcean.svg" width=16/> **Digital Ocean**:
+  - Familiarização com o Cloud Provider
+  - 🔜 Ver métricas no terminal web
+
+
+> O DevOps é uma metodologia que visa a integração entre as equipes de desenvolvimento e operações de TI para que haja uma colaboração mais eficiente e um ciclo de desenvolvimento mais ágil. Nesse contexto, a importância de trabalhar em conjunto é fundamental para que a equipe consiga atingir seus objetivos com eficiência. Por isso, para este projeto, trabalhei em conjunto com outra pessoa [👥 @Fannine2](https://github.com/Fannine2/)
+
+#### Printscreen do frontend:
+![dindinFront](assets/dindinFront.png)
+
+#### Printscreen do backend:
+![dindinBack](assets/dindinBack.png)
+
+#### `kubectl get all`:
+```bash
+❯ kubectl get all
+NAME                                       READY   STATUS    RESTARTS   AGE
+pod/backend-deployment-6c8c94bfc8-zzhsm    1/1     Running   0          34h
+pod/frontend-deployment-75b99cdb4b-5xfch   1/1     Running   0          33h
+pod/frontend-deployment-75b99cdb4b-7zl96   1/1     Running   0          33h
+pod/frontend-deployment-75b99cdb4b-bpt2p   1/1     Running   0          33h
+
+NAME                       TYPE           CLUSTER-IP      EXTERNAL-IP      PORT(S)        AGE
+service/backend-service    ClusterIP      10.245.196.44   <none>           3333/TCP       2d4h
+service/frontend-service   LoadBalancer   10.245.210.42   178.128.133.32   80:30000/TCP   2d4h
+service/kubernetes         ClusterIP      10.245.0.1      <none>           443/TCP        2d4h
+
+NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/backend-deployment    1/1     1            1           2d4h
+deployment.apps/frontend-deployment   3/3     3            3           2d4h
+
+NAME                                             DESIRED   CURRENT   READY   AGE
+replicaset.apps/backend-deployment-6c8c94bfc8    1         1         1       2d4h
+replicaset.apps/frontend-deployment-75b99cdb4b   3         3         3       2d4h
+
+```
+
+> A aplicação também pode ser vista no seguinte endereço: http://dindin.taffarel.tech ou diretamente pelo IP: http://178.128.133.32
+> Como eu não vou deixar no ar para não gastar dinheiro 💸, também tem a seguinte opção: https://web.archive.org/web/*/https://dindin.taffarel.tech/*
+
+</details>
+
+Para ver o repositório no gitlab com uma documentação com mais detalhes [clique aqui](https://gitlab.com/it-study-group-br/finances)
 
 <h2 id="contribuir">📫 Contribuindo para este repositório</h2>
 
