@@ -1,3 +1,6 @@
 [submodule "projects/jornada-devops-elite"]
 	path = projects/jornada-devops-elite
 	url = git@github.com:taffarel55/jornada-devops-elite.git
+[submodule "projects/finances"]
+	path = projects/finances
+	url = git@gitlab.com:it-study-group-br/finances.git
