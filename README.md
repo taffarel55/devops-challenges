@@ -131,7 +131,7 @@ replicaset.apps/frontend-deployment-75b99cdb4b   3         3         3       2d4
 ```
 
 > A aplicação também pode ser vista no seguinte endereço: http://dindin.taffarel.tech ou diretamente pelo IP: http://178.128.133.32
-> Como eu não vou deixar no ar para não gastar dinheiro 💸, também tem a seguinte opção: https://web.archive.org/web/*/https://dindin.taffarel.tech/*
+> Como eu não vou deixar no ar para não gastar dinheiro 💸, também tem as seguinte opções para consultar quando esses serviços não estiverem sidos mais disponíveis: https://web.archive.org/web/20230224052346/http://178.128.133.32/ https://web.archive.org/web/20230225160403/http://dindin.taffarel.tech/
 
 </details>
 
