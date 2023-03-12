@@ -36,7 +36,7 @@ Este foi o meu primeiro contato de verdade com o DevOps, foi um evento que possi
 
 Para ver o que foi abordado em cada aula, os arquivos e as docuentações do projeto [clique aqui](https://github.com/taffarel55/jornada-devops-elite)
 
-### 2. Dindin 🚧 Em andamento 🚧
+### 2. Dindin
 
 ![](assets/dindin.png)
 
@@ -50,22 +50,29 @@ Utilizando os conhecimentos adquiridos na [Jornada DevOps de Elite](#1-jornada-d
   <br>
 </h1>
 
-A ideia foi subir este projeto em um ambiente de produção. A seguir está a lista de coisas que fiz, aprendi e ainda pretendo fazer:
+
+
+A ideia foi subir este projeto em um ambiente de produção. A seguir está a lista de coisas que fiz e trabalhei ao longo desse projeto:
 
 - 📃 **Código**:
+  - Desenvolvimento da aplicação
   - Ajustes gerais código fonte
   - Mudança de endpoints caso esteja em _prod_
-  - 🔜 Criação de testes unitários frontend
-  - 🔜 Criação de testes unitários backend
+  - Criação de testes unitários frontend
+  - Criação de testes unitários backend
 - <img src="assets/gitlab.svg" width=16/> **GitLab**:
   - Criação do projeto em outra plataforma
   - Utilização do registry
-  - 🔜 Implementar pipeline de CI/CD
-  - 🔜 Armazenar state do Terraform
+  - Implementar pipeline de CI/CD com stages:
+    - Testes de front e back
+    - Build docker
+    - Deploy
+  - Criação e uso de variables no pipeline
+  - Utilização de Issues em Boards
 - <img src="assets/docker.svg" width=16/> **Docker**:
   - Dockerfile do backend
   - Dockerfile do frontend
-  - Usei multi-stage build
+  - Utilização de multi-stage build
   - Aprendizado de técnicas e boas práticas
   - Utilização do registry do gitlab
 - <img src="assets/kubernetes.svg" width=16/> **Kubernetes**:
@@ -75,10 +82,7 @@ A ideia foi subir este projeto em um ambiente de produção. A seguir está a li
   - Utilização do `Deployment`
   - Utilização do `ReplicaSet`
   - Utilização do `Pod`
-  - 🔜 Utilização do `Ingress`
-  - 🔜 Utilização do `PersistentVolume`
-  - 🔜 Utilização do `cert-manager`
-  - 🔜 Utilização do `external-dns`
+  - Utilização de Services `ClusterIP` e `LoadBalancer`
 - <img src="assets/nginx.svg" width=16/> **Nginx**:
   - Configuração básica `nginx.conf`
   - Passar solicitação para proxy server
