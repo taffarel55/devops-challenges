@@ -44,12 +44,19 @@ Para ver o que foi abordado em cada aula, os arquivos e as docuentações do pro
 
 Utilizando os conhecimentos adquiridos na [Jornada DevOps de Elite](#1-jornada-devops-de-elite), decidi implantar um projeto simples que já havia desenvolvido anteriormente, composto por um frontend e um backend seguindo a topologia abaixo:
 
+Docker:
 <h1 align="center">
   <br>
-  <img src="https://gitlab.com/it-study-group-br/finances/-/raw/master/assets/topology.png" alt="Topologia do projeto">
+  <img src="https://gitlab.com/devops-study-br/finances/-/raw/master/assets/finances-docker.drawio.png" alt="Topologia do projeto">
   <br>
 </h1>
 
+Kubernetes:
+<h1 align="center">
+  <br>
+  <img src="https://gitlab.com/devops-study-br/finances/-/raw/master/assets/finances-k8s.drawio.png" alt="Topologia do projeto">
+  <br>
+</h1>
 
 
 A ideia foi subir este projeto em um ambiente de produção. A seguir está a lista de coisas que fiz e trabalhei ao longo desse projeto:
@@ -95,7 +102,7 @@ A ideia foi subir este projeto em um ambiente de produção. A seguir está a li
   - Terraform para a Digital Ocean
 - <img src="assets/digitalOcean.svg" width=16/> **Digital Ocean**:
   - Familiarização com o Cloud Provider
-  - 🔜 Ver métricas no terminal web
+  - Ver métricas no terminal web
 
 
 > O DevOps é uma metodologia que visa a integração entre as equipes de desenvolvimento e operações de TI para que haja uma colaboração mais eficiente e um ciclo de desenvolvimento mais ágil. Nesse contexto, a importância de trabalhar em conjunto é fundamental para que a equipe consiga atingir seus objetivos com eficiência. Por isso, para este projeto, trabalhei em conjunto com outra pessoa [👥 @Fannine2](https://github.com/Fannine2/)
@@ -130,12 +137,12 @@ replicaset.apps/frontend-deployment-75b99cdb4b   3         3         3       2d4
 
 ```
 
-> A aplicação também pode ser vista no seguinte endereço: http://dindin.taffarel.tech ou diretamente pelo IP: http://178.128.133.32
+> A aplicação também pode ser vista no seguinte endereço: http://dindin.taffarel.tech ou diretamente pelo IP: http://178.128.133.32 (Não funciona mais)
 > Como eu não vou deixar no ar para não gastar dinheiro 💸, também tem as seguinte opções para consultar quando esses serviços não estiverem sidos mais disponíveis: https://web.archive.org/web/20230224052346/http://178.128.133.32/ https://web.archive.org/web/20230225160403/http://dindin.taffarel.tech/
 
 </details>
 
-Para ver o repositório no gitlab com uma documentação com mais detalhes [clique aqui](https://gitlab.com/it-study-group-br/finances)
+Para ver o repositório no gitlab com uma documentação com mais detalhes [clique aqui](https://gitlab.com/devops-study-br/finances)
 
 <h2 id="contribuir">📫 Contribuindo para este repositório</h2>
 
